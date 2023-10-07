@@ -1,10 +1,10 @@
-# AMD ROCm Installation Guide on RX 6600 XT + TensorFlow and PyTorch
+# AMD ROCm Installation Guide on RX 6500 XT + TensorFlow and PyTorch
 
 ## What is ROCm?
 ROCm is an open-source stack for GPU computation. ROCm is primarily Open-Source Software (OSS) that allows developers the freedom to customize and tailor their GPU software for their own needs while collaborating with a community of other developers, and helping each other find solutions in an agile, flexible, rapid and secure manner. [Read More..](https://rocm.docs.amd.com/en/latest/rocm.html)
 
 ## Installation Prerequisites
-In this guide, I will install **AMD ROCm** + **TensorFlow** and **PyTorch** on **Ubuntu 22.04 LTS**
+In this guide, I will install **AMD ROCm** + **TensorFlow** and **PyTorch** on **Ubuntu 20.04 LTS**
 
 ### Make Sure It's Up to Date
 1. Run the following commands:
@@ -35,8 +35,8 @@ echo 'EXTRA_GROUPS=render' | sudo tee -a /etc/adduser.conf
 To download and install the `amdgpu-install` script on the system, run the following commands:
 ```
 sudo apt update
-wget https://repo.radeon.com/amdgpu-install/5.5.1/ubuntu/jammy/amdgpu-install_5.5.50501-1_all.deb
-sudo apt install ./amdgpu-install_5.5.50501-1_all.deb
+wget https://repo.radeon.com/amdgpu-install/5.6.1/ubuntu/focal/amdgpu-install_5.6.50601-1_all.deb
+sudo apt install ./amdgpu-install_5.6.50601-1_all.deb
 ```
 
 We will install ROCm with `Single-version Installation` mode, run the following commands:
